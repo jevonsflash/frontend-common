@@ -1,0 +1,21 @@
+{
+    // version 1.1
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "typescript.validate.enable": true,
+    "scss.validate": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "files.exclude": {
+        "node_modules/": true,
+        "dist/": true
+    },
+    "git.autofetch": true,
+    "svg.preview.mode": "svg",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+}
