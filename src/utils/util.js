@@ -4,10 +4,10 @@
  */
 
 
-import _isEqual from 'lodash/isEqual';
-import _get from 'lodash/get';
-import _set from 'lodash/set';
-import _cloneDeep from 'lodash/cloneDeep';
+import _isEqual from 'lodash/isEqual.js';
+import _get from 'lodash/get.js';
+import _set from 'lodash/set.js';
+import _cloneDeep from 'lodash/cloneDeep.js';
 
 /**
  * 判断两个对象是否相等
