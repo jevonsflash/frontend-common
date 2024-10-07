@@ -3,9 +3,9 @@ import { mkAjoxParams, mkAjoxData } from "./../../api/ajaxRequire"
 
 
 export async function CreateNow(data) {
-    return await mkAjoxData('File/CreateNow', 'post', data)
+    return await mkAjoxData('HexoAssetsService/CreateNow', 'post', data)
 }
 
 export async function Create(data) {
-    return await mkAjoxData('File/Create', 'post', data)
+    return await mkAjoxData('HexoAssetsService/Create', 'post', data)
 }
