@@ -37,4 +37,26 @@ export async function ChangePassword(data) {
 export async function ResetPassword(data) {
     var entity = await mkAjoxData('User/ResetPassword', 'post', data)
     return entity
-} 
+}
+
+
+export async function GetLogins(data) {
+    var entity = await mkAjoxParams('User/GetLogins', 'get', data)
+    return entity
+}
+
+export async function SendForgotPasswordCaptcha(data) {
+    var entity = await mkAjoxData('User/SendForgotPasswordCaptcha', 'post', data)
+    return entity
+}
+
+export async function VerifyAndSendResetPasswordLink(data) {
+    var entity = await mkAjoxData('User/VerifyAndSendResetPasswordLink', 'post', data)
+    return entity
+}
+
+
+export async function ResetPasswordByCode(data) {
+    var entity = await mkAjoxData('User/ResetPasswordByCode', 'post', data)
+    return entity
+}
