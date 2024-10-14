@@ -30,3 +30,8 @@ export async function GetCurrentUserInfo(): Promise<GetCurrentUserInfoResponseDt
     var entity = await mkAjoxParams('/User/GetCurrentUserInfo', 'get', null)
     return entity
 }
+
+export async function SendTwoFactorAuthenticateCaptcha(data) {
+    var entity = await mkAjoxData('/SendTwoFactorAuthenticateCaptcha', 'post', data, '/api/TokenAuth')
+    return entity
+}
