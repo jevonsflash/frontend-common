@@ -4,12 +4,17 @@ export class LoginRequest {
     userNameOrEmailAddress: string = ''
     password: string = ''
     rememberClient?: boolean = true
+    twoFactorAuthenticationToken?: string = ""
+    twoFactorAuthenticationProvider?: string = ""
+    rememberClientToken?: string = ""
 }
 
 export class ExternalLoginRequest {
     authProvider: string
     providerKey: string
     providerAccessCode: string
+    avatar: string
+    phoneNumber: string
 }
 
 
