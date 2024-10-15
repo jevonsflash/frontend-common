@@ -15,17 +15,23 @@ export const setSize = (size: string) => Cookies.set(sizeKey, size)
 
 // User
 const tokenKey = 'main_token'
+const rememberTokenKey = '2fa_remember_token'
 const chatTokenKey = 'chat_token'
 const chatWebSocketSessionKey = 'chat_ws_session'
 const chatUserIdKey = 'chat_uid'
+const tenancyNameKey = 'abp-tenant'
 export const getToken = () => Cookies.get(tokenKey)
+export const getRememberToken = () => Cookies.get(rememberTokenKey)
+export const getTenancyName = () => Cookies.get(tenancyNameKey)
 export const getChatToken = () => Cookies.get(chatTokenKey)
 export const getChatWebSocketSession = () => Cookies.get(chatWebSocketSessionKey)
 export const getChatUserId = () => Cookies.get(chatUserIdKey)
 export const setToken = (token: string) => Cookies.set(tokenKey, token)
+export const setRememberToken = (token: string) => Cookies.set(rememberTokenKey, token)
 export const setChatToken = (token: string) => Cookies.set(chatTokenKey, token)
 export const setChatWebSocketSession = (session: string) => Cookies.set(chatWebSocketSessionKey, session)
 export const setChatUserId = (uid: string) => Cookies.set(chatUserIdKey, uid)
+export const setTenancyName = (tenancyName: string) => Cookies.set(tenancyNameKey, tenancyName)
 export const removeToken = () => Cookies.remove(tokenKey)
 export const removeChat = () => {
     Cookies.remove(chatTokenKey);
